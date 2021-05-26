@@ -142,7 +142,7 @@ class ZLPhotoPreviewPopInteractiveTransition: UIPercentDrivenInteractiveTransiti
         containerView.addSubview(toVC.view)
         
         self.shadowView = UIView(frame: containerView.bounds)
-        self.shadowView?.backgroundColor = UIColor.black
+        self.shadowView?.backgroundColor = UIColor.white
         containerView.addSubview(self.shadowView!)
         
         let cell = fromVC.collectionView.cellForItem(at: IndexPath(row: fromVC.currentIndex, section: 0)) as! ZLPreviewBaseCell
